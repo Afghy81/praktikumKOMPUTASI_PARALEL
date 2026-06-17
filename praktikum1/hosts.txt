@@ -1,0 +1,18 @@
+# ==============================================
+# File Konfigurasi Host untuk MPI (hosts.txt)
+# ==============================================
+# Format: hostname slots=jumlah_proses
+#
+# Penggunaan:
+#   mpirun --hostfile hosts.txt -np 5 ./mpi_nilai
+#
+# --- Mode Localhost (1 mesin, 5 proses) ---
+localhost slots=5
+#
+# --- Mode Multi-Node (ganti dengan IP anggota) ---
+# Uncomment baris di bawah dan comment baris localhost di atas
+# 192.168.1.101 slots=1
+# 192.168.1.102 slots=1
+# 192.168.1.103 slots=1
+# 192.168.1.104 slots=1
+# 192.168.1.105 slots=1
